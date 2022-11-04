@@ -41,7 +41,9 @@ ul {
 
 p {color: var(--p-text-color);}
 
-.header {}
+.header {
+    
+}
 .container {
     margin-right: 15px;
     margin-left: 15px;
@@ -156,6 +158,9 @@ p {color: var(--p-text-color);}
     padding-bottom: 50px;
     padding-top: 94px;
 }
+.section-list {
+    display: flex;
+}
 .team-member {
     background-color: var(--white-color);
     width: 270px;
@@ -176,6 +181,9 @@ p {color: var(--p-text-color);}
     text-align: center;
 }
 /* Portfolio servises */
+.services-list {
+    display: flex;
+}
 .button {
     font-family: inherit;
     font-weight: 500;
@@ -192,6 +200,14 @@ p {color: var(--p-text-color);}
 .button:focus {
     color: var(--white-color);
     background-color: var(--accent-color) 
+}
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+.project-list-item {
+    margin-right: 30px;
+    margin-bottom: 30px;
 }
 .project-title {
     margin-bottom: 4px;
