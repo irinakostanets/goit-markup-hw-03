@@ -124,33 +124,34 @@ p {color: var(--p-text-color);}
     text-align: center;
 }
 .hero-title {
+    margin-bottom: 30px;
+
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--white-color);
-    padding: 
 }
 .hero-button {
+    display: inline-block;
+
     background-color: var(--accent-color);
     color: var(--white-color);
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
-    display: flex;
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-color: var(--accent-color);
     border-radius: 4px;
-    padding: 
     min-width: 216px;
 }
 /* Peculiarities */
-.section-title {
-    padding-top: 94px;
+.section-title,
+.section2-title {
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
@@ -170,20 +171,29 @@ p {color: var(--p-text-color);}
 }
 
 /* Work */
+.section-list .item + .item {
+    margin-left: 30px;
+}
+
+/* Team */
 
 .section2 {
     background-color: var(--light-backgroud-color);
 }
-
-/* Team */
-.section-title {
+.section2-title {
     padding-bottom: 50px;
     padding-top: 94px;
 }
-.section-list {
+.section2-list {
     display: flex;
+    padding-bottom: 94px;
+}
+.section2-list .team-member + .team-member {
+    margin-left: 30px;
 }
 .team-member {
+    padding-bottom: 94px;
+
     background-color: var(--white-color);
     width: 270px;
     height: 368px;
@@ -203,8 +213,17 @@ p {color: var(--p-text-color);}
     text-align: center;
 }
 /* Portfolio servises */
+.projects {
+    margin-top: 94px;
+}
+
 .services-list {
     display: flex;
+    margin-bottom: 50px;
+    justify-content: center;
+}
+.services-list .item + .item {
+    margin-left: 8px;
 }
 .button {
     font-family: inherit;
@@ -226,10 +245,10 @@ p {color: var(--p-text-color);}
 .project-list {
     display: flex;
     flex-wrap: wrap;
+    gap: 30px;
 }
 .project-list-item {
-    margin-right: 30px;
-    margin-bottom: 30px;
+    
 }
 .project-title {
     margin-bottom: 4px;
@@ -253,6 +272,12 @@ p {color: var(--p-text-color);}
 }
 .logo-footer {
     color: var(--white-color);
+}
+.address {
+    margin-top: 20px;
+}
+.address .item + .item {
+    margin-top: 9px;
 }
 .footer-adress {
     color: var(--white-color);
