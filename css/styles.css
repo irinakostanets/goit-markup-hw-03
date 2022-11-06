@@ -120,6 +120,8 @@ p {color: var(--p-text-color);}
 /* Main */
 
 .hero {
+    margin-bottom: 94px;
+
     background-color: var(--dark-backgroud-color);
     text-align: center;
 }
@@ -150,6 +152,16 @@ p {color: var(--p-text-color);}
     min-width: 216px;
 }
 /* Peculiarities */
+.feature-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+.feature-list .item {
+    width: 270px;
+}
+.feature-list .item + .item {
+    margin-left: 30px;
+}
 .section-title,
 .section2-title {
     font-size: 36px;
@@ -171,9 +183,16 @@ p {color: var(--p-text-color);}
 }
 
 /* Work */
-.section-list .item + .item {
-    margin-left: 30px;
+
+.section {
+    margin-bottom: 94px;
 }
+.section-list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
 
 /* Team */
 
@@ -215,6 +234,7 @@ p {color: var(--p-text-color);}
 /* Portfolio servises */
 .projects {
     margin-top: 94px;
+    margin-bottom: 94px;
 }
 
 .services-list {
