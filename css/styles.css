@@ -102,6 +102,9 @@ p {color: var(--p-text-color);}
     margin-left: 50px;
 }
 .contact-item {
+    padding-top: 32px;
+    padding-bottom: 32px;
+
     color: var(--p-text-color);
     font-weight: 500;
     font-size: 14px;
@@ -216,10 +219,11 @@ p {color: var(--p-text-color);}
     margin-left: 30px;
 }
 .team-member {
-
+    padding-bottom: 37px;
     background-color: var(--white-color);
     width: 270px;
-    height: 368px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
 }
 .team-member .name {
     margin-top: 30px;
@@ -270,6 +274,7 @@ p {color: var(--p-text-color);}
 }
 .container-project {
     padding: 20px 24px;
+    border-top: none;
 }
 .project-list-item {
     
@@ -284,7 +289,6 @@ p {color: var(--p-text-color);}
 .project-type {
     font-size: 16px;
     line-height: 1.88;
-    margin-bottom: 20px;
 }
 
 /* Footer*/
@@ -302,7 +306,7 @@ p {color: var(--p-text-color);}
 .logo-footer-secondary {
     color: var(--white-color);
 }
-.address {
+address {
     margin-top: 20px;
 }
 .address .item + .item {
